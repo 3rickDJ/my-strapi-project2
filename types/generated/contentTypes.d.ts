@@ -378,6 +378,8 @@ export interface ApiLocationLocation extends Schema.CollectionType {
     longitud: Attribute.Float;
     isEmpty: Attribute.Boolean;
     type: Attribute.Enumeration<['discapacitado', 'moto']>;
+    description: Attribute.Text;
+    cover: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
