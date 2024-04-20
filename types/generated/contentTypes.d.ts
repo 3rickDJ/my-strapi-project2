@@ -368,6 +368,7 @@ export interface ApiLocationLocation extends Schema.CollectionType {
     singularName: 'location';
     pluralName: 'locations';
     displayName: 'location';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -375,6 +376,8 @@ export interface ApiLocationLocation extends Schema.CollectionType {
   attributes: {
     latitud: Attribute.Float;
     longitud: Attribute.Float;
+    isEmpty: Attribute.Boolean;
+    type: Attribute.Enumeration<['discapacitado', 'moto']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

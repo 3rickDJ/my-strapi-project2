@@ -4,7 +4,8 @@
   "info": {
     "singularName": "location",
     "pluralName": "locations",
-    "displayName": "location"
+    "displayName": "location",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,16 @@
     },
     "longitud": {
       "type": "float"
+    },
+    "isEmpty": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "discapacitado",
+        "moto"
+      ]
     }
   }
 }

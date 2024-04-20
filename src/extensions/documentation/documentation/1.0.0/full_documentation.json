@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-04-19T07:16:10.954Z"
+    "x-generation-date": "2024-04-20T08:18:25.279Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -102,6 +102,16 @@
               "longitud": {
                 "type": "number",
                 "format": "float"
+              },
+              "isEmpty": {
+                "type": "boolean"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "discapacitado",
+                  "moto"
+                ]
               }
             }
           }
@@ -163,6 +173,16 @@
           "longitud": {
             "type": "number",
             "format": "float"
+          },
+          "isEmpty": {
+            "type": "boolean"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "discapacitado",
+              "moto"
+            ]
           },
           "createdAt": {
             "type": "string",
